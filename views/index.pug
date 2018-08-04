@@ -1,0 +1,11 @@
+html
+    head
+        title Ruuvi Web
+        link(rel="stylesheet" href="static/main.css")
+    body
+        #app
+            h1 Ruuvi Web
+            p Alla näet lukemat löydetyistä ruuveista
+            display(v-for="tag in tags" :key="tag" :id="tag")
+    
+    script(src="static/main.js")
